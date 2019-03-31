@@ -21,6 +21,7 @@
 		77BD889C2251825F00F51CB3 /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD889B2251825F00F51CB3 /* ViewController+ARSCNViewDelegate.swift */; };
 		77BD889E2251826900F51CB3 /* ViewController+SCNPhysicsContactDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD889D2251826900F51CB3 /* ViewController+SCNPhysicsContactDelegate.swift */; };
 		77BD88A02251827100F51CB3 /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD889F2251827100F51CB3 /* Wall.swift */; };
+		77BD88A3225185FC00F51CB3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 77BD88A2225185FC00F51CB3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		77BD889B2251825F00F51CB3 /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
 		77BD889D2251826900F51CB3 /* ViewController+SCNPhysicsContactDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SCNPhysicsContactDelegate.swift"; sourceTree = "<group>"; };
 		77BD889F2251827100F51CB3 /* Wall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
+		77BD88A2225185FC00F51CB3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		77BD88702251809D00F51CB3 = {
 			isa = PBXGroup;
 			children = (
+				77BD88A2225185FC00F51CB3 /* README.md */,
 				77BD887B2251809D00F51CB3 /* AR Basketball */,
 				77BD887A2251809D00F51CB3 /* Products */,
 			);
@@ -167,6 +170,7 @@
 			files = (
 				77BD887F2251809D00F51CB3 /* art.scnassets in Resources */,
 				77BD88892251809F00F51CB3 /* LaunchScreen.storyboard in Resources */,
+				77BD88A3225185FC00F51CB3 /* README.md in Resources */,
 				77BD88862251809F00F51CB3 /* Assets.xcassets in Resources */,
 				77BD88842251809D00F51CB3 /* Main.storyboard in Resources */,
 			);
