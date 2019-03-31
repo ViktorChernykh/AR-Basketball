@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77BD887D2251809D00F51CB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD887C2251809D00F51CB3 /* AppDelegate.swift */; };
+		77BD887F2251809D00F51CB3 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 77BD887E2251809D00F51CB3 /* art.scnassets */; };
+		77BD88812251809D00F51CB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD88802251809D00F51CB3 /* ViewController.swift */; };
+		77BD88842251809D00F51CB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77BD88822251809D00F51CB3 /* Main.storyboard */; };
+		77BD88862251809F00F51CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77BD88852251809F00F51CB3 /* Assets.xcassets */; };
+		77BD88892251809F00F51CB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77BD88872251809F00F51CB3 /* LaunchScreen.storyboard */; };
+		77BD88922251822F00F51CB3 /* Basketball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD88912251822F00F51CB3 /* Basketball.swift */; };
+		77BD88942251823900F51CB3 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD88932251823900F51CB3 /* BitMaskCategory.swift */; };
+		77BD88962251824300F51CB3 /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD88952251824300F51CB3 /* Disk.swift */; };
+		77BD88982251824E00F51CB3 /* Hoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD88972251824E00F51CB3 /* Hoop.swift */; };
+		77BD889A2251825700F51CB3 /* ViewController+@IBAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD88992251825700F51CB3 /* ViewController+@IBAction.swift */; };
+		77BD889C2251825F00F51CB3 /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD889B2251825F00F51CB3 /* ViewController+ARSCNViewDelegate.swift */; };
+		77BD889E2251826900F51CB3 /* ViewController+SCNPhysicsContactDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD889D2251826900F51CB3 /* ViewController+SCNPhysicsContactDelegate.swift */; };
+		77BD88A02251827100F51CB3 /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD889F2251827100F51CB3 /* Wall.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77BD88792251809D00F51CB3 /* AR Basketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Basketball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77BD887C2251809D00F51CB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77BD887E2251809D00F51CB3 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		77BD88802251809D00F51CB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77BD88832251809D00F51CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77BD88852251809F00F51CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77BD88882251809F00F51CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77BD888A2251809F00F51CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77BD88912251822F00F51CB3 /* Basketball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Basketball.swift; sourceTree = "<group>"; };
+		77BD88932251823900F51CB3 /* BitMaskCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
+		77BD88952251824300F51CB3 /* Disk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disk.swift; sourceTree = "<group>"; };
+		77BD88972251824E00F51CB3 /* Hoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hoop.swift; sourceTree = "<group>"; };
+		77BD88992251825700F51CB3 /* ViewController+@IBAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+@IBAction.swift"; sourceTree = "<group>"; };
+		77BD889B2251825F00F51CB3 /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		77BD889D2251826900F51CB3 /* ViewController+SCNPhysicsContactDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SCNPhysicsContactDelegate.swift"; sourceTree = "<group>"; };
+		77BD889F2251827100F51CB3 /* Wall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77BD88762251809D00F51CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77BD88702251809D00F51CB3 = {
+			isa = PBXGroup;
+			children = (
+				77BD887B2251809D00F51CB3 /* AR Basketball */,
+				77BD887A2251809D00F51CB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77BD887A2251809D00F51CB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77BD88792251809D00F51CB3 /* AR Basketball.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77BD887B2251809D00F51CB3 /* AR Basketball */ = {
+			isa = PBXGroup;
+			children = (
+				77BD88912251822F00F51CB3 /* Basketball.swift */,
+				77BD88932251823900F51CB3 /* BitMaskCategory.swift */,
+				77BD88952251824300F51CB3 /* Disk.swift */,
+				77BD88972251824E00F51CB3 /* Hoop.swift */,
+				77BD889F2251827100F51CB3 /* Wall.swift */,
+				77BD88A12251828B00F51CB3 /* ViewController */,
+				77BD8890225181F100F51CB3 /* Supporting Files */,
+				77BD887E2251809D00F51CB3 /* art.scnassets */,
+				77BD888A2251809F00F51CB3 /* Info.plist */,
+			);
+			path = "AR Basketball";
+			sourceTree = "<group>";
+		};
+		77BD8890225181F100F51CB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77BD887C2251809D00F51CB3 /* AppDelegate.swift */,
+				77BD88822251809D00F51CB3 /* Main.storyboard */,
+				77BD88852251809F00F51CB3 /* Assets.xcassets */,
+				77BD88872251809F00F51CB3 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77BD88A12251828B00F51CB3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77BD88802251809D00F51CB3 /* ViewController.swift */,
+				77BD889B2251825F00F51CB3 /* ViewController+ARSCNViewDelegate.swift */,
+				77BD889D2251826900F51CB3 /* ViewController+SCNPhysicsContactDelegate.swift */,
+				77BD88992251825700F51CB3 /* ViewController+@IBAction.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77BD88782251809D00F51CB3 /* AR Basketball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77BD888D2251809F00F51CB3 /* Build configuration list for PBXNativeTarget "AR Basketball" */;
+			buildPhases = (
+				77BD88752251809D00F51CB3 /* Sources */,
+				77BD88762251809D00F51CB3 /* Frameworks */,
+				77BD88772251809D00F51CB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AR Basketball";
+			productName = "AR Basketball";
+			productReference = 77BD88792251809D00F51CB3 /* AR Basketball.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77BD88712251809D00F51CB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Viktor Chernykh";
+				TargetAttributes = {
+					77BD88782251809D00F51CB3 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 77BD88742251809D00F51CB3 /* Build configuration list for PBXProject "AR Basketball" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77BD88702251809D00F51CB3;
+			productRefGroup = 77BD887A2251809D00F51CB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77BD88782251809D00F51CB3 /* AR Basketball */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77BD88772251809D00F51CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BD887F2251809D00F51CB3 /* art.scnassets in Resources */,
+				77BD88892251809F00F51CB3 /* LaunchScreen.storyboard in Resources */,
+				77BD88862251809F00F51CB3 /* Assets.xcassets in Resources */,
+				77BD88842251809D00F51CB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77BD88752251809D00F51CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BD889C2251825F00F51CB3 /* ViewController+ARSCNViewDelegate.swift in Sources */,
+				77BD88812251809D00F51CB3 /* ViewController.swift in Sources */,
+				77BD88982251824E00F51CB3 /* Hoop.swift in Sources */,
+				77BD889A2251825700F51CB3 /* ViewController+@IBAction.swift in Sources */,
+				77BD88962251824300F51CB3 /* Disk.swift in Sources */,
+				77BD88942251823900F51CB3 /* BitMaskCategory.swift in Sources */,
+				77BD887D2251809D00F51CB3 /* AppDelegate.swift in Sources */,
+				77BD88A02251827100F51CB3 /* Wall.swift in Sources */,
+				77BD88922251822F00F51CB3 /* Basketball.swift in Sources */,
+				77BD889E2251826900F51CB3 /* ViewController+SCNPhysicsContactDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77BD88822251809D00F51CB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77BD88832251809D00F51CB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77BD88872251809F00F51CB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77BD88882251809F00F51CB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77BD888B2251809F00F51CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77BD888C2251809F00F51CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77BD888E2251809F00F51CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5TN22FY2J;
+				INFOPLIST_FILE = "AR Basketball/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.viktorsoft.AR-Basketball";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77BD888F2251809F00F51CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5TN22FY2J;
+				INFOPLIST_FILE = "AR Basketball/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.viktorsoft.AR-Basketball";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77BD88742251809D00F51CB3 /* Build configuration list for PBXProject "AR Basketball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77BD888B2251809F00F51CB3 /* Debug */,
+				77BD888C2251809F00F51CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77BD888D2251809F00F51CB3 /* Build configuration list for PBXNativeTarget "AR Basketball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77BD888E2251809F00F51CB3 /* Debug */,
+				77BD888F2251809F00F51CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77BD88712251809D00F51CB3 /* Project object */;
+}
