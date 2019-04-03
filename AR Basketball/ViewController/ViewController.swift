@@ -31,8 +31,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    var arrBall = [SCNNode]()
-    var arrGoal = [Int]()
+    var arrBall = [SCNNode: [Int]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +62,6 @@ class ViewController: UIViewController {
         
         // Run the view's session
         sceneView.session.run(configuration)
-
     }
     
     override func viewWillDisappear(_ animated: Bool) {
