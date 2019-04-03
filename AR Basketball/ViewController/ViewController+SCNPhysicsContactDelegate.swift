@@ -15,8 +15,6 @@ extension ViewController: SCNPhysicsContactDelegate {
         guard let nameA = contact.nodeA.name else { return }
         guard let nameB = contact.nodeB.name else { return }
         
-        print(nameA, nameB)
-        
         guard (nameA == "ball") || (nameB == "ball") else { return }
 
         guard (nameA == "diskUpper") || (nameB == "diskUpper") ||
@@ -35,7 +33,7 @@ extension ViewController: SCNPhysicsContactDelegate {
         }
 
         if nodeDisk.name == "floor" {
-            nodeBall.removeFromParentNode()            
+            nodeBall.removeFromParentNode()
             return
         }
         
