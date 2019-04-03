@@ -15,13 +15,17 @@ extension ViewController: SCNPhysicsContactDelegate {
         guard let nameA = contact.nodeA.name else { return }
         guard let nameB = contact.nodeB.name else { return }
         
-        guard (nameA == "ball") || (nameB == "ball") else { return }
+        print(nameA, nameB)
         
-        guard (nameA == "diskUpper") || (nameB == "diskUpper") || (nameA == "diskLower") || (nameB == "diskLower") else { return }
+        guard (nameA == "ball") || (nameB == "ball") else { return }
+
+        guard (nameA == "diskUpper") || (nameB == "diskUpper") ||
+            (nameA == "diskLower") || (nameB == "diskLower") ||
+            (nameA == "floor") || (nameB == "floor") else { return }
 
         var nodeBall = SCNNode()
         var nodeDisk = SCNNode()
-        
+
         if nameA == "ball" {
             nodeBall = contact.nodeA
             nodeDisk = contact.nodeB
@@ -29,20 +33,25 @@ extension ViewController: SCNPhysicsContactDelegate {
             nodeBall = contact.nodeB
             nodeDisk = contact.nodeA
         }
+
+        if nodeDisk.name == "floor" {
+            nodeBall.removeFromParentNode()            
+            return
+        }
         
         if arrBall[nodeBall] == nil {
             if nodeDisk.name == "diskUpper" {
-                arrBall[nodeBall] = [1, 0]
+                arrBall[nodeBall] = BitMaskDisk.upperDisk
             }
             if nodeDisk.name == "diskLower" {
-                arrBall[nodeBall] = [0, 1]
+                arrBall[nodeBall] = BitMaskDisk.lowerDisk
             }
             return
         }
         
         if nodeDisk.name == "diskLower" {
-            if arrBall[nodeBall] == [1, 0] {
-                arrBall[nodeBall] = [1, 1]
+            if arrBall[nodeBall] == BitMaskDisk.upperDisk {
+                arrBall[nodeBall] = (BitMaskDisk.upperDisk | BitMaskDisk.lowerDisk)
                 score += 1
             }
         }

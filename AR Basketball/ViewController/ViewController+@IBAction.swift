@@ -26,10 +26,13 @@ extension ViewController {
             Hoop.removeWall(at: sceneView)
             sceneView.scene.rootNode.addChildNode(hoop)
             
-            guard let diskUpper = Disk(at: sceneView, fromY: 0) else { return }
-            guard let diskLower = Disk(at: sceneView, fromY: -0.4) else { return }
+            guard let diskUpper = Disk(at: sceneView, fromY: DiskLevel.upperDisk) else { return }
+            guard let diskLower = Disk(at: sceneView, fromY: DiskLevel.lowerDisk) else { return }
+            guard let diskFloor = Disk(at: sceneView, fromY: DiskLevel.floor) else { return }
+            
             sceneView.scene.rootNode.addChildNode(diskUpper)
             sceneView.scene.rootNode.addChildNode(diskLower)
+            sceneView.scene.rootNode.addChildNode(diskFloor)
             
             sceneView.debugOptions = []
             

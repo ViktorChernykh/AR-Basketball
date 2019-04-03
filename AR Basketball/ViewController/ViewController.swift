@@ -31,21 +31,21 @@ class ViewController: UIViewController {
             }
         }
     }
-    var arrBall = [SCNNode: [Int]]()
+    var arrBall = [SCNNode: Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         sceneView.autoenablesDefaultLighting = true
-        
+
         // Set the view's delegate
         sceneView.delegate = self
-        
+
         sceneView.scene.physicsWorld.contactDelegate = self
-        
+
         // Show statistics such as fps and timing information
         //sceneView.showsStatistics = true
-        
+
         sceneView.debugOptions = [.showFeaturePoints]//, .showWorldOrigin]
         
         scoreLabel.text = "Goal: 0"
