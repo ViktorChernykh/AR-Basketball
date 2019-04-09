@@ -23,31 +23,31 @@ class Disk: SCNNode {
         }
 
         // get current frame
-        self.geometry = SCNTube(innerRadius: 0.01, outerRadius: outerRadius, height: 0.01)
+        geometry = SCNTube(innerRadius: 0.01, outerRadius: outerRadius, height: 0.01)
         
         let shape = SCNPhysicsShape(node: self, options: [
             SCNPhysicsShape.Option.collisionMargin: 0.01
             ])
-        self.physicsBody = SCNPhysicsBody(type: .static, shape: shape)
-        self.opacity = 0
+        physicsBody = SCNPhysicsBody(type: .static, shape: shape)
+        opacity = 0
         
         var position = torus.worldPosition
         position.y += positionY
-        self.worldPosition = position
+        worldPosition = position
         
         switch positionY {
         case DiskLevel.upperDisk:
-            self.name = "diskUpper"
+            name = "diskUpper"
         case DiskLevel.lowerDisk:
-            self.name = "diskLower"
+            name = "diskLower"
         case DiskLevel.floor:
-            self.name = "floor"
+            name = "floor"
         default:
-            self.name = nil
+            name = nil
         }
         
-        self.physicsBody?.categoryBitMask = BitMaskCategory.disk
-        self.physicsBody?.contactTestBitMask = BitMaskCategory.ball
+        physicsBody?.categoryBitMask = BitMaskCategory.disk
+        physicsBody?.contactTestBitMask = BitMaskCategory.ball
         
     }
     

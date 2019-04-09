@@ -14,7 +14,7 @@
 		77BD88862251809F00F51CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77BD88852251809F00F51CB3 /* Assets.xcassets */; };
 		77BD88892251809F00F51CB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77BD88872251809F00F51CB3 /* LaunchScreen.storyboard */; };
 		77BD88922251822F00F51CB3 /* Basketball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD88912251822F00F51CB3 /* Basketball.swift */; };
-		77BD88942251823900F51CB3 /* Bit Masks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD88932251823900F51CB3 /* Bit Masks.swift */; };
+		77BD88942251823900F51CB3 /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD88932251823900F51CB3 /* Structures.swift */; };
 		77BD88962251824300F51CB3 /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD88952251824300F51CB3 /* Disk.swift */; };
 		77BD88982251824E00F51CB3 /* Hoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD88972251824E00F51CB3 /* Hoop.swift */; };
 		77BD889A2251825700F51CB3 /* ViewController+@IBAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD88992251825700F51CB3 /* ViewController+@IBAction.swift */; };
@@ -34,7 +34,7 @@
 		77BD88882251809F00F51CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77BD888A2251809F00F51CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77BD88912251822F00F51CB3 /* Basketball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Basketball.swift; sourceTree = "<group>"; };
-		77BD88932251823900F51CB3 /* Bit Masks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bit Masks.swift"; sourceTree = "<group>"; };
+		77BD88932251823900F51CB3 /* Structures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
 		77BD88952251824300F51CB3 /* Disk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disk.swift; sourceTree = "<group>"; };
 		77BD88972251824E00F51CB3 /* Hoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hoop.swift; sourceTree = "<group>"; };
 		77BD88992251825700F51CB3 /* ViewController+@IBAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+@IBAction.swift"; sourceTree = "<group>"; };
@@ -76,9 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				77BD88912251822F00F51CB3 /* Basketball.swift */,
-				77BD88932251823900F51CB3 /* Bit Masks.swift */,
 				77BD88952251824300F51CB3 /* Disk.swift */,
 				77BD88972251824E00F51CB3 /* Hoop.swift */,
+				77BD88932251823900F51CB3 /* Structures.swift */,
 				77BD889F2251827100F51CB3 /* Wall.swift */,
 				77BD88A12251828B00F51CB3 /* ViewController */,
 				77BD8890225181F100F51CB3 /* Supporting Files */,
@@ -188,7 +188,7 @@
 				77BD88982251824E00F51CB3 /* Hoop.swift in Sources */,
 				77BD889A2251825700F51CB3 /* ViewController+@IBAction.swift in Sources */,
 				77BD88962251824300F51CB3 /* Disk.swift in Sources */,
-				77BD88942251823900F51CB3 /* Bit Masks.swift in Sources */,
+				77BD88942251823900F51CB3 /* Structures.swift in Sources */,
 				77BD887D2251809D00F51CB3 /* AppDelegate.swift in Sources */,
 				77BD88A02251827100F51CB3 /* Wall.swift in Sources */,
 				77BD88922251822F00F51CB3 /* Basketball.swift in Sources */,
